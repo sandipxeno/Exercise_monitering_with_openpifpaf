@@ -85,17 +85,5 @@ License
 MIT License - See LICENSE.md
 
 
-**Recommended additions:**
-1. Add actual sample GIF/video of the system in action
-2. Include performance metrics (accuracy, FPS benchmarks)
-3. Add citation for OpenPifPaf if using their pretrained models
-4. Contribution guidelines if open-sourcing
-5. Troubleshooting section for common issues
-
-Would you like me to:
-1. Add more detailed installation instructions for specific environments?
-2. Include sample command outputs?
-3. Add API documentation for integrating with other systems?
-4. Create a more detailed contribution guide?
 
    
