@@ -106,12 +106,12 @@ python train.py --data ./training_data --epochs 50
 
 ## 👥 Contributors
 
-- Karthikeya  
-- Lakshmi  
-- Swedha  
-- Sandip  
-- Mohasin  
-- Sreehari  
+- [Karthikeya](https://github.com/karthikeyapranav)
+- [Lakshmi](https://github.com/Lakshmits310)  
+- [Swedha](https://github.com/swedhakumar)  
+- [Sandip](https://github.com/sandipxeno)  
+- [Mohasin](https://github.com/Mohasinasifck)  
+- [Sreehari](https://github.com/Harryy17)  
 
 ---
 
