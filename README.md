@@ -19,14 +19,21 @@ A hybrid system combining LSTM and rule-based methods to analyze exercise form, 
 
 Installation
 # Clone repository
+```sh
 git clone https://github.com/yourusername/exercise-analysis.git
 cd exercise-analysis
+```
 
 # Install dependencies
+```sh
 pip install -r requirements.txt
+```
 
-# Download pretrained models
-wget https://example.com/path/to/models.zip && unzip models.zip
+# Download pretrained models 
+```sh
+wget https://example.com/path/to/models.zip
+```
+&& unzip models.zip
 
 
 Usage
