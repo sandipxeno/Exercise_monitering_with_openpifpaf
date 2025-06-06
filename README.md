@@ -9,7 +9,12 @@ for push up - ![Screenshot (372)](https://github.com/user-attachments/assets/50b
 ---
 for pull up - ![Screenshot (375)](https://github.com/user-attachments/assets/9c9c860b-b5ab-43bb-b6f0-d31714c3f80f)
 ---
-
+for squat -- ![Screenshot (378)](https://github.com/user-attachments/assets/8210ba3f-ed0c-4321-9b48-2ca176fc029a)
+---
+for leg raises -- ![Screenshot (381)](https://github.com/user-attachments/assets/3e36d862-b32a-4c04-870e-6336c40f341e)
+---
+for plank -- ![Screenshot (384)](https://github.com/user-attachments/assets/679d0287-dae7-4317-a45a-db04a4ca3b56)
+---
 
 A hybrid AI system using **OpenPifPaf** for keypoint detection, combined with **LSTM-based classification** and **rule-based logic** to monitor and analyze your workout form. It detects **posture mistakes**, **counts repetitions**, and provides **visual + textual feedback** for five popular exercises:
 
