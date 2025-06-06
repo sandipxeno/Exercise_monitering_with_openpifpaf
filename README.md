@@ -2,7 +2,8 @@
 ## Smart Exercise Form Analysis & Repetition Counting System
 
 ![OpenPifPaf Keypoints](https://example.com/path/to/sample_keypoints_image.gif)  
-> *Visualizing body keypoints using OpenPifPaf — replace with an actual sample GIF or image*
+> *Visualizing body keypoints using OpenPifPaf — ![Screenshot (370)](https://github.com/user-attachments/assets/d38450b8-3db2-4c74-8350-4d3602cbbde3)
+
 
 ---
 
