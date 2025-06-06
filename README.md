@@ -4,8 +4,12 @@
 ![OpenPifPaf Keypoints](https://example.com/path/to/sample_keypoints_image.gif)  
 > *Visualizing body keypoints using OpenPifPaf — ![Screenshot (370)](https://github.com/user-attachments/assets/d38450b8-3db2-4c74-8350-4d3602cbbde3)
 
-
 ---
+for push up - ![Screenshot (372)](https://github.com/user-attachments/assets/50b44454-68b6-4b8d-a074-b3598ac28392)
+---
+for pull up - ![Screenshot (375)](https://github.com/user-attachments/assets/9c9c860b-b5ab-43bb-b6f0-d31714c3f80f)
+---
+
 
 A hybrid AI system using **OpenPifPaf** for keypoint detection, combined with **LSTM-based classification** and **rule-based logic** to monitor and analyze your workout form. It detects **posture mistakes**, **counts repetitions**, and provides **visual + textual feedback** for five popular exercises:
 
