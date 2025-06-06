@@ -28,6 +28,109 @@ A hybrid AI system using **OpenPifPaf** for keypoint detection, combined with **
 
 ---
 
+🧠 How It Works
+The system is a hybrid pipeline combining pose estimation, LSTM-based classification, and rule-based correction to monitor exercise form and count repetitions.
+
+🔄 System Flow
+css
+Copy
+Edit
+Input Video → OpenPifPaf → Keypoint Extraction → LSTM + Rules → Mistake Detection + Rep Counting → Output (Video + Report)
+🧩 Components Breakdown
+1. Keypoint Detection with OpenPifPaf
+Input: Raw .mp4 video of user performing an exercise.
+
+Tool Used: OpenPifPaf
+
+Output: 2D coordinates of body joints (nose, shoulders, elbows, knees, ankles, etc.) frame by frame.
+
+Stored as: video_keypoints.npy
+
+📌 These keypoints form the base data for further analysis.
+
+2. Repetition Counting (Dynamic Exercises)
+Applies to: Squats, Pushups, Situps, Lunges
+
+Uses joint angles (e.g., knee, elbow, hip) over time.
+
+Detects repetition cycles using:
+
+Slope changes
+
+Threshold-based triggers (e.g., when knee angle dips below 90°)
+
+Outputs total reps counted.
+
+3. Posture Mistake Detection
+Uses rule-based checks based on keypoint geometry:
+
+Example for Pushups:
+
+Elbow flaring > 45°
+
+Hip lower than shoulder → “Hip Sag”
+
+Incomplete elbow extension
+
+Outputs frame-by-frame mistake logs like:
+
+json
+Copy
+Edit
+{
+  "frame": 215,
+  "issue": "Hip sagging"
+}
+4. Form Classification via LSTM
+A trained LSTM (Long Short-Term Memory) model:
+
+Input: Sequence of keypoints across frames.
+
+Output: Binary class (Correct = 1, Incorrect = 0)
+
+Helpful in detecting subtle mistakes not caught by rules.
+
+You can train your own LSTM using:
+
+bash
+Copy
+Edit
+python train.py --data ./training_data
+5. Plank Special Case
+Plank has no repetitions.
+
+System only checks for:
+
+Straight spine (shoulder–hip–ankle alignment)
+
+Hip sag/bend
+
+Outputs: Whether the form is "Good" or "Poor" over time.
+
+6. Annotated Output Generation
+Generates:
+
+📹 video_annotated.mp4: Overlayed keypoints + mistake highlights
+
+📄 video_report.json: Summary of reps & mistakes
+
+📊 video_keypoints.npy: Raw keypoint time-series
+
+🧠 Sample Output Flow
+bash
+Copy
+Edit
+python analyze.py --input pushup_video.mp4 --exercise pushup
+Output in ./results:
+
+pushup_video_annotated.mp4
+
+pushup_video_report.json
+
+pushup_video_keypoints.npy
+
+---
+
 ## 🛠️ Installation & Setup
 
 1.  Clone the Repository
